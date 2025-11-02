@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
             </Link>
             <p>
-              Bepaw is a convenience services to the <br /> adaptability, We
+              Bepaw is a convenience services to the <br /> adaptability. We
               care about every pet of our <br /> clients and provide all kinds
               of pet <br /> carebr services in New York.
             </p>
