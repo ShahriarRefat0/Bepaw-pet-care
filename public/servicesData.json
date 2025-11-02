@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://images.unsplash.com/photo-1557495235-340eb888a9fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1413",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://shthemes.net/demosd/pepito/wp-content/uploads/2025/03/02.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Dog Winter Booties Fitting",
+    "providerName": "Happy Paws Boutique",
+    "providerEmail": "contact@happypaws.com",
+    "price": 20,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Protect your dog's paws from cold and snow with custom-fitted booties.",
+    "image": "https://i.ibb.co.com/TMkL3rcx/karsten-winegeart-OOq-H7p-PWk0-unsplash.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Indoor Dog Training Sessions",
+    "providerName": "PawAcademy",
+    "providerEmail": "training@pawacademy.com",
+    "price": 40,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Winter indoor training to keep your dog active and well-behaved.",
+    "image": "https://studycorgi.com/wp-content/uploads/2022/07/243423_1.jpg",
+    "category": "Training"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Bath & Coat Conditioning",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Warm bath with hydrating conditioner to maintain healthy fur during winter.",
+    "image": "https://i.ibb.co.com/pS9jYXK/j-balla-photography-F57x-Lufncj8-unsplash.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Holiday Pet Photoshoot",
+    "providerName": "Pawfect Moments Studio",
+    "providerEmail": "bookings@pawfectmoments.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Capture festive memories with your pets in a cozy winter-themed photoshoot.",
+    "image": "https://i.ibb.co.com/zTcsjjMk/samsung-memory-B4yp-Xk-Gj5h-I-unsplash.jpg",
+    "category": "Photography"
+  }
+]
