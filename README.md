@@ -250,108 +250,17 @@ cd Bepaw-pet-care
 npm install
 # or
 yarn install
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies & Packages Used](#technologies--packages-used)
-- [Layout Structure](#layout-structure)
-- [Pages & Functionality](#pages--functionality)
-- [JSON Data](#json-data)
-- [Installation & Setup](#installation--setup)
-- [Author](#author)
-
----
-
-## Project Overview
-
-**Bepaw** is a cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season.
-
-Users can explore:
-
-- Local pet care services
-- Winter pet clothing
-- Grooming options
-- Expert tips
-- Profile management and secure login
-
-The platform focuses on a **modern, minimalist design**, intuitive navigation, and engaging animations using **AOS** and **Animate.css**.
-
----
-
-## Features
-
-- Fully **responsive** design for mobile, tablet, and desktop
-- **Single Page Application (SPA)** behavior with smooth route navigation
-- **Authentication system**: Email/password signup & login, Google social login
-- **Protected routes**: Service details and profile pages accessible only to logged-in users
-- **Profile management**: Update display name and profile picture
-- **Dynamic JSON data**: Services and winter care tips
-- **Interactive hero slider**: Swiper-based winter-themed hero section
-- **Toast notifications**: Success/error messages using **react-hot-toast**
-- **Extra home page sections**: Expert vets showcase, winter care tips, and a custom section
-
----
-
-## Technologies & Packages Used
-
-- **React** – Frontend framework
-- **React Router** – SPA routing
-- **Firebase Authentication** – Secure user login/signup
-- **React Hot Toast** – Toast notifications for success/error messages
-- **AOS (Animate on Scroll)** – Scroll-based animations
-- **Animate.css** – Smooth element animations
-- **Swiper.js** – Interactive sliders for hero section
-- **Tailwind CSS** – Utility-first styling
-- **DaisyUI** – Prebuilt UI components for rapid development
-
----
-
-## Layout Structure
-
-- **Navbar**: Logo, navigation links, dynamic user avatar, login/register/logout buttons
-- **Footer**: Contact info, social links, privacy policy
-- **Main Sections**:
-  - Hero slider
-  - Popular winter care services
-  - Winter care tips
-  - Expert vets
-  - FAQ section
-
----
-
-## Pages & Functionality
-
-1. **Home Page**
-
-   - Hero section with winter-themed Swiper slider
-   - Popular services with cards displaying image, name, price, rating, and view details
-   - Winter care tips
-   - Expert vet profiles
-   - FAQ
-
-2. **Service Details Page** (Protected Route)
-
-   - Shows full service information from JSON
-   - Booking form with name, email, and "Book Now" button
-   - Success toast on booking submission
-
-3. **Authentication Pages**
-
-   - **Login Page**: Email, password, password toggle, Google login, forgot password link
-   - **Signup Page**: Name, email, password, photo URL, password validation
-
-4. **My Profile Page**
-
-   - Shows logged-in user info: Name, email, profile image
-   - Update profile form using Firebase
-   - Functional "Update Profile" button
-
-5. **Forgot Password**
-   - Email input and reset button redirecting user to Gmail for password reset
-
+```  
+### Environment Variables
+Create a .env.local or .env file in the root of the project and add your Firebase configuration:
 ```
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```  
 
 ---  
 ## 👨‍💻 Author
