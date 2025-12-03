@@ -42,6 +42,7 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+
   const passReset = (email) => {
     return sendPasswordResetEmail(auth, email);
   };

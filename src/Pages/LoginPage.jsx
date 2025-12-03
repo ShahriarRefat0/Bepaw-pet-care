@@ -76,8 +76,8 @@ navigate(`${location.state ? location.state : '/'}`)
     }
       passReset(email)
         .then((resc) => {
+          toast.success("Verify your email")
           navigate("/password-reset", { state: { email } });
-          toast.success("Password reset successfully")
         })
         .catch((e) => {
           

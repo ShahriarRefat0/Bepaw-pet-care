@@ -82,7 +82,7 @@ const navigate = useNavigate()
   );
 
   return (
-    <div className=" bg-[#1F1F1F] shadow-sm h-20">
+    <div className=" bg-[#ff0000] shadow-sm h-20">
       <div className="navbar text-white w-11/12 mx-auto pt-4">
         <div className="navbar-start">
           <div className="dropdown">
