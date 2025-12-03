@@ -1,9 +1,9 @@
-# WarmPaws – Winter Pet Care Platform
+# Bepaw – Winter Pet Care Platform
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.2-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-9.23.0-yellow?logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![Netlify](https://img.shields.io/badge/Netlify-Deploy-green)](https://www.netlify.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deploy-green)](https://vercel.com/home)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 **Repository:** [GitHub Repo](https://github.com/programming-hero-web-course2/b12-a9-firesheild-ShahriarRefat0.git)  
