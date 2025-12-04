@@ -13,7 +13,7 @@
   },
   {
     "serviceId": 2,
-    "serviceName": "Winter Grooming & Paw Treatment",
+    "serviceName": "Winter Grooming ",
     "providerName": "CozyPets Grooming",
     "providerEmail": "hello@cozypets.com",
     "price": 30,
@@ -49,7 +49,7 @@
   },
   {
     "serviceId": 5,
-    "serviceName": "Winter Bath & Coat Conditioning",
+    "serviceName": "Winter Bath ",
     "providerName": "CozyPets Grooming",
     "providerEmail": "hello@cozypets.com",
     "price": 35,

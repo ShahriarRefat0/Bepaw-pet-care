@@ -11,8 +11,8 @@ import {
 import { Link } from "react-router";
 const Footer = () => {
   return (
-    <div className="bg-[#1F1F1F]">
-      <footer className="text-gray-300 md:px-10 p-0 ">
+    <div className="bg-[#F5F1EC] shadow-md dark:bg-[#1A1613] dark:text-gray-300 text-gray-700">
+      <footer className="  ">
         <div className="footer sm:footer-horizontal  w-11/12 mx-auto md:py-20 py-10 ">
           <aside>
             <Link to="/" className="cursor-pointer  flex gap-2">
@@ -35,11 +35,11 @@ const Footer = () => {
               69/A, Baridhara, Dhaka
             </a>
             <a className="link link-hover flex items-center gap-2">
-              <IoCallOutline /> +880-3334 2433
+              <IoCallOutline /> (+88) 0123-456-789
             </a>
             <a className="link link-hover flex items-center gap-2">
               <IoMailOutline />
-              Bepaw@gaiml.com
+              contact@bepaw.com
             </a>
           </nav>
           <nav>
@@ -53,16 +53,16 @@ const Footer = () => {
             <div>
               <h6 className="footer-title">Social Link</h6>
               <div className="flex  items-center gap-2">
-                <a className="link link-hover">
+                <a className="link link-hover text-[#F8721F] hover:text-gray-700  transition-all duration-300">
                   <FaSquareInstagram size={30} />
                 </a>
-                <a className="link link-hover">
+                <a className="link link-hover text-[#F8721F] hover:text-gray-700  transition-all duration-300">
                   <FaFacebookSquare size={30} />
                 </a>
-                <a className="link link-hover">
+                <a className="link link-hover text-[#F8721F] hover:text-gray-700  transition-all duration-300">
                   <IoLogoYoutube size={30} />
                 </a>
-                <a className="link link-hover">
+                <a className="link link-hover text-[#F8721F] hover:text-gray-700  transition-all duration-300">
                   <FaSquareWhatsapp size={30} />
                 </a>
               </div>
@@ -109,7 +109,7 @@ const Footer = () => {
           </nav>
         </div>
       </footer>
-      <div className="footer sm:footer-horizontal footer-center bg-[#1F1F1F] text-gray-300 p-5  border-y border-gray-500">
+      <div className="footer sm:footer-horizontal footer-center dark:bg-[#1A1613] bg-[#F5F1EC] text-gray-700 dark:text-gray-300 p-5  border-y border-orange-300">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by{" "}

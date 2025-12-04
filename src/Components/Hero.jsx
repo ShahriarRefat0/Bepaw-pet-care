@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <div
       data-aos="zoom-out"
-      className="w-11/12 mx-auto mt-15 rounded-2xl overflow-hidden"
+      className="w-11/12 mx-auto mt-15 rounded-2xl "
     >
       <Swiper
         spaceBetween={30}

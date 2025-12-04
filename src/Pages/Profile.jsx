@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import SpinnerLoading from "./SpinnerLoading"; 
+import SpinnerLoading from "./SpinnerLoading";
 import toast from "react-hot-toast";
 
 const Profile = () => {
   const [loading, setLoading] = useState(true)
   const [currentImg, setCurrentImg] = useState(0);
   const { user, setUser, updatePro } = useContext(AuthContext) || {};
-const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleConfirmUpdate = (e) => {
     e.preventDefault()
@@ -19,7 +19,7 @@ const [isModalOpen, setIsModalOpen] = useState(false)
     updatePro(displayName, photoURL)
       .then((res) => {
         // console.log(res)
-       const updatedUser = { ...user, displayName, photoURL };
+        const updatedUser = { ...user, displayName, photoURL };
         setUser(updatedUser);
         toast.success("Profile update successfully")
         setIsModalOpen(false)
@@ -27,11 +27,11 @@ const [isModalOpen, setIsModalOpen] = useState(false)
       })
       .catch((e) => {
         console.log(e.message)
-      toast.error("Oops! went wrong.")
-    })
- 
+        toast.error("Oops! went wrong.")
+      })
+
   }
-  
+
   // console.log(user)
 
 
@@ -52,26 +52,25 @@ const [isModalOpen, setIsModalOpen] = useState(false)
 
 
   useEffect(() => {
-  const timer = setTimeout(() => {
-    setLoading(false)
-  }, 1500);
-    return ()=> clearTimeout(timer)
-},[])
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+    return () => clearTimeout(timer)
+  }, [])
 
-  
+
   if (loading) {
     return <SpinnerLoading></SpinnerLoading>;
   }
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden p-6">
+    <div className="relative min-h-screen w-full flex items-center justify-center overflow-clip p-6">
       {/* Background Slider */}
       {imgs.map((img, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-center bg-cover transition-opacity duration-1000 ${
-            index === currentImg ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 bg-center bg-cover transition-opacity duration-1000 ${index === currentImg ? "opacity-100" : "opacity-0"
+            }`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
       ))}
@@ -79,7 +78,7 @@ const [isModalOpen, setIsModalOpen] = useState(false)
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div
-       
+
         className="relative z-10 w-full max-w-md md:max-w-lg bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-white/30 shadow-2xl animate__animated animate__fadeIn"
       >
         <fieldset className="fieldset text-white">
@@ -126,7 +125,7 @@ const [isModalOpen, setIsModalOpen] = useState(false)
 
         <dialog open={isModalOpen} className="modal">
           <div className="modal-box">
-            <h2 className="text-2xl font-semibold mb-3 text-gray-800">
+            <h2 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-300">
               Update Your Profile
             </h2>
             <form

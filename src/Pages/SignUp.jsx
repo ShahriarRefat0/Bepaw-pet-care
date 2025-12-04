@@ -18,7 +18,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
-  
+
     e.preventDefault();
     const form = e.target;
     const displayName = form.name?.value;
@@ -50,15 +50,15 @@ const SignUp = () => {
           });
       })
       .catch((e) => {
-       if (e.code === "auth/email-already-in-use") {
-         toast.error(
-           "This email is already registered. Please log in instead!"
+        if (e.code === "auth/email-already-in-use") {
+          toast.error(
+            "This email is already registered. Please log in instead!"
           );
-         navigate('/')
-         return
-       } else {
-         toast.error("Something went wrong. Please try again.");
-       }
+          navigate('/')
+          return
+        } else {
+          toast.error("Something went wrong. Please try again.");
+        }
       });
   };
 
@@ -74,7 +74,7 @@ const SignUp = () => {
       })
       .catch((e) => {
         // console.log(e)
-          toast.error("Something went wrong. Please try again.");
+        toast.error("Something went wrong. Please try again.");
 
       });
   };
@@ -98,17 +98,16 @@ const SignUp = () => {
     }, 1500);
     return () => clearTimeout(timer);
   }, [])
-  
-  if(loading) return <SpinnerLoading></SpinnerLoading>
+
+  if (loading) return <SpinnerLoading></SpinnerLoading>
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col md:flex-row items-center justify-center md:justify-between overflow-hidden p-6 md:p-16 gap-8">
+    <div className="relative min-h-screen w-full flex flex-col md:flex-row items-center justify-center md:justify-between overflow-clip p-6 md:p-16 gap-8">
       {imgs.map((img, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-center bg-cover transition-opacity duration-1000 ${
-            index === currentImg ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 bg-center bg-cover transition-opacity duration-1000 ${index === currentImg ? "opacity-100" : "opacity-0"
+            }`}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
       ))}
@@ -132,7 +131,7 @@ const SignUp = () => {
 
       <form
         onSubmit={handleRegister}
-        className="relative z-10 w-full max-w-sm mx-auto md:mr-0 bg-white/10 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-white/30 shadow-2xl animate__animated animate__fadeInRight"
+        className="relative z-10 w-full max-w-sm mx-auto md:mr-8 bg-white/10 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-white/30 shadow-2xl animate__animated animate__fadeInRight"
       >
         <fieldset className="fieldset text-white">
           <legend className="fieldset-legend text-2xl font-semibold text-white mb-4 text-center">

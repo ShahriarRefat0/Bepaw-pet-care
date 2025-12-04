@@ -10,7 +10,7 @@ const Services = () => {
 
 
   return (
-    <div className="w-11/12 mx-auto my-15 md:p-10 p-0">
+    <div className="w-11/12 mx-auto mt-20 ">
       <div data-aos="fade-down">
         <h1
           data-aos="fade-down"
@@ -26,7 +26,7 @@ const Services = () => {
       <section
         data-aos="fade-up"
         
-        className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
       >
         {servData.map((service) => (
           <ServiceCard key={service.serviceId} service={service}></ServiceCard>

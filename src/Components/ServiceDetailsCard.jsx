@@ -70,7 +70,7 @@ const ServiceDetailsCard = ({ service }) => {
           </Link>
         </div>
       </div>
-      <div className="bg-[#F6F2ED] px-6 md:px-20 py-12 md:py-20">
+      <div className="bg-base-300 px-6 md:px-20 py-12 md:py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-16">
           {/* Text Section */}
           <div className="max-w-md text-center md:text-left">

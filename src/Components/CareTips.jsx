@@ -3,7 +3,7 @@ import { GiCheckMark } from "react-icons/gi";
 
 const CareTips = () => {
   return (
-    <div className="w-11/12 mx-auto my-20 md:p-10 p-0">
+    <div className="w-11/12 mx-auto mt-20 ">
       <div data-aos="fade-down">
         <h1 className="md:text-5xl text-3xl text-center pb-6 font-semibold">
           Winter Care Tips for Pets
@@ -16,7 +16,7 @@ const CareTips = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div
           data-aos="fade-up"
-          className="bg-[#F6F2ED]    p-10 rounded-3xl flex justify-center items-center"
+          className="bg-[#F6F2ED] p-10 rounded-3xl flex justify-center items-center"
         >
           <img
             className="md:w-[900px] w-[550px] rounded-3xl "
@@ -31,7 +31,7 @@ const CareTips = () => {
             className="relative bg-[#F6F2ED] px-10 py-8 rounded-3xl flex items-start gap-5"
           >
             <div className="mt-1">
-              <GiCheckMark size={28} />
+              <GiCheckMark size={28} color="#F8721F" />
             </div>
             <div>
               <h2 className="text-2xl font-semibold text-gray-800">
@@ -53,7 +53,7 @@ const CareTips = () => {
             className="relative bg-[#F6F2ED] px-10 py-8 rounded-3xl flex items-start gap-5"
           >
             <div className="mt-1">
-              <GiCheckMark size={28} />
+              <GiCheckMark size={28} color="#F8721F" />
             </div>
             <div>
               <h2 className="text-2xl font-semibold text-gray-800">
@@ -75,7 +75,7 @@ const CareTips = () => {
             className="relative bg-[#F6F2ED] px-10 py-8 rounded-3xl flex items-start gap-5"
           >
             <div className="mt-1">
-              <GiCheckMark size={28} />
+              <GiCheckMark size={28} color="#F8721F" />
             </div>
             <div>
               <h2 className="text-2xl font-semibold text-gray-800">

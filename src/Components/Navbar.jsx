@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React, { use, useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router";
 import logo from "../assets/logo-1.png";
 import { AuthContext } from "../AuthProvider/AuthProvider";
@@ -6,7 +6,8 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, userLogout, setLoading } = use(AuthContext);
-const navigate = useNavigate()
+  const [theme, setTheme] =useState(localStorage.getItem("theme") || "light")
+  const navigate = useNavigate()
   // console.log(user.photoURL);
 
   const handleUserLogout = () => {
@@ -22,8 +23,8 @@ const navigate = useNavigate()
       });
   };
 
- 
-  
+
+
 
   // nav option links
   const links = (
@@ -31,27 +32,53 @@ const navigate = useNavigate()
       <li>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+          className={({ isActive }) =>
+            `${isActive ? "active" : ""} font-medium`
+          }>
           Home
         </NavLink>
       </li>
       <li>
         <NavLink
           to="/all-service"
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Service
+          className={({ isActive }) =>
+            `${isActive ? "active" : ""} font-medium`
+          }>
+          All Services
+        </NavLink>
+      </li>
+      {
+        user && <li>
+          <NavLink
+            to={user ? "/profile" : '/login'}
+            className={({ isActive }) =>
+              `${isActive ? "active" : ""} font-medium`
+            }
+
+          >
+            Profile
+          </NavLink>
+        </li>
+      }
+      <li>
+        <NavLink
+          to="/contactUs"
+          className={({ isActive }) =>
+            `${isActive ? "active" : ""} font-medium`
+          }>
+          Contact Us
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={user ? "/profile" :'/login'}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Profile
+          to="/aboutUs"
+          className={({ isActive }) =>
+            `${isActive ? "active" : ""} font-medium`
+          }>
+          About Us
         </NavLink>
       </li>
+     
     </>
   );
 
@@ -81,9 +108,20 @@ const navigate = useNavigate()
     </>
   );
 
+  useEffect(() => {
+    const html = document.querySelector("html")
+    html.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+}, [theme])
+
+  const handleTheme = (checked) => {
+    setTheme(checked ? "dark" : "Light")
+  }
+  
+
   return (
-    <div className=" bg-[#ff0000] shadow-sm h-20">
-      <div className="navbar text-white w-11/12 mx-auto pt-4">
+    <div className={`dark:bg-[#1A1613] bg-[#F5F1EC]  shadow-sm  sticky top-0 z-50`}>
+      <div className="navbar w-11/12 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -105,9 +143,10 @@ const navigate = useNavigate()
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-[#1F1F1F] font-semibold  rounded-box z-20 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#F5F1EC] font-semibold  rounded-box z-20 mt-3 w-52 p-2 shadow"
             >
               {links}
+             
               <div className="flex flex-col gap-2 p-2">{showBtns}</div>
             </ul>
           </div>
@@ -140,7 +179,7 @@ const navigate = useNavigate()
               <div
                 tabIndex={0}
                 role="button"
-                className="w-12 h-12 rounded-full border border-gray-400 overflow-hidden"
+                className="w-12 h-12 rounded-full border border-gray-400 overflow-clip"
               >
                 <img
                   className="w-full h-full object-cover"
@@ -161,7 +200,20 @@ const navigate = useNavigate()
               </ul>
             </div>
           )}
+         
           <div className="hidden lg:flex gap-4">{showBtns}</div>
+          <div
+          >
+            <label className="toggle text-base-content">
+              <input
+            onChange={(e)=>handleTheme(e.target.checked)}
+                type="checkbox" value="synthwave" className="theme-controller" />
+
+            <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></g></svg>
+
+            <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></g></svg>
+
+          </label></div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { ServDataContext } from '../Context/ServDataContext';
 const AllServices = () => {
     const { servData } = use(ServDataContext)
   return (
-    <div data-aos="fade-up" className="w-11/12 mx-auto my-15 md:p-10 p-0">
+    <div data-aos="fade-up" className="w-11/12 mx-auto mb-15 md:p-10 p-0">
       <h1 className="md:text-5xl text-3xl text-center pb-6 font-semibold">
         {" "}
         Our All Services
@@ -16,7 +16,7 @@ const AllServices = () => {
       <section
         data-aos="fade-up"
         data-aos-duration="3000"
-        className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
       >
         {servData.map((service) => (
           <ServiceCard key={service.serviceId} service={service}></ServiceCard>

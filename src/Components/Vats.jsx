@@ -51,12 +51,12 @@ const vetsData = [
 
 const Vats = () => {
   return (
-    <div className="w-11/12 mx-auto my-20">
+    <div className="w-11/12 mx-auto  my-20">
       <div data-aos="fade-down">
         <h1 className="md:text-5xl text-3xl text-center pb-6 font-semibold">
           Meet Our Expert Vets
         </h1>
-        <p className="text-gray-500 text-lg pb-10 text-center">
+        <p className="text-gray-500  text-lg pb-10 text-center">
           Experienced, Caring, and Always Here for Your Pets
         </p>
       </div>
@@ -66,9 +66,9 @@ const Vats = () => {
           <div
             key={idx}
             data-aos="fade-up"
-            className="flex flex-col items-center bg-white  overflow-hidden"
+            className="flex flex-col items-center   overflow-clip"
           >
-            <div className="relative w-full overflow-hidden rounded-3xl group">
+            <div className="relative w-full overflow-clip rounded-3xl group">
               <img
                 src={vet.img}
                 alt={vet.name}
@@ -80,7 +80,7 @@ const Vats = () => {
                   href={vet.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-pink-500 transition"
+                  className="text-gray-600  hover:text-pink-500 transition"
                 >
                   <FaInstagram size={18} />
                 </a>
@@ -111,11 +111,11 @@ const Vats = () => {
               </div>
             </div>
 
-            <div className="text-center p-6">
-              <h2 className="text-2xl text-gray-800 font-semibold">
+            <div className="text-center p-6 dark:bg-[#1D232A]">
+              <h2 className="text-2xl text-gray-800 dark:text-gray-200 font-semibold">
                 {vet.name}
               </h2>
-              <p className="text-gray-500">{vet.role}</p>
+              <p className="text-gray-500 dark:text-gray-400">{vet.role}</p>
             </div>
           </div>
         ))}

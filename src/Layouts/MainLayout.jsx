@@ -18,9 +18,9 @@ const MainLayout = () => {
   
   return (
     <div>
-      <header>
+  
         <Navbar></Navbar>
-      </header>
+    
       <main className="min-h-screen ">
         {loading ? <SpinnerLoading></SpinnerLoading> : <Outlet></Outlet>}
       </main>

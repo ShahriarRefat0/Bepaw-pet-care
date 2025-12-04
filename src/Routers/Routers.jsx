@@ -9,6 +9,9 @@ import Profile from "../Pages/Profile";
 import PrivetRout from "../PrivetRout/PrivetRout";
 import PassResetForm from "../Pages/PassResetForm";
 import AllServices from "../Pages/AllServices";
+import ContactUs from "../Pages/ContactUs";
+import Error from "../Pages/Error";
+import AboutUs from "../Pages/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -34,9 +37,9 @@ const router = createBrowserRouter([
       {
         path: "/service-details/:id",
         element: (
-          <PrivetRout>
+          
             <ServiceDetails></ServiceDetails>
-          </PrivetRout>
+         
         ),
       },
       {
@@ -47,12 +50,20 @@ const router = createBrowserRouter([
         path: "/all-service",
         element:<AllServices></AllServices>
       },
+      {
+        path: "contactUs",
+        element:<ContactUs></ContactUs>
+      },
+      {
+        path: "aboutUs",
+        element:<AboutUs></AboutUs>
+      },
     ],
   },
 
   {
     path: "/*",
-    element: <h2>error 404</h2>,
+    element: <Error></Error>,
   },
 ]);
 

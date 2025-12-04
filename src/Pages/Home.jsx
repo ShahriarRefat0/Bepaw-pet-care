@@ -14,7 +14,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div>
+    <div className="">
       <section>
         <Hero></Hero>
       </section>

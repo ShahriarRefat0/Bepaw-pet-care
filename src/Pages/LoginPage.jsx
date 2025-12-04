@@ -69,7 +69,7 @@ navigate(`${location.state ? location.state : '/'}`)
   }
   
   const handleResetPass = (e) => {
- 
+ e.preventDefault()
     const email = emailRef.current.value
     if (!email) {
       return toast("⚠️ Please Enter Your Email");
@@ -112,7 +112,7 @@ navigate(`${location.state ? location.state : '/'}`)
   
   
   return (
-    <div className="relative min-h-screen w-full flex flex-col md:flex-row items-center justify-center md:justify-between overflow-hidden p-6 md:p-16 gap-8">
+    <div className="relative min-h-screen w-full flex flex-col md:flex-row items-center justify-center md:justify-between  p-6 md:p-16 gap-8">
       {imgs.map((img, index) => (
         <div
           key={index}
@@ -150,7 +150,7 @@ navigate(`${location.state ? location.state : '/'}`)
 
       <form
         onSubmit={handleLogin}
-        className="relative z-10 w-full max-w-sm bg-white/10 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-white/30 shadow-2xl animate__animated animate__fadeInRight"
+        className="relative z-10 mx-8 w-full max-w-sm bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/30 shadow-2xl animate__animated animate__fadeInRight"
       >
         <fieldset className="fieldset text-white">
           <legend className="fieldset-legend text-2xl font-semibold text-white mb-4 text-center">
