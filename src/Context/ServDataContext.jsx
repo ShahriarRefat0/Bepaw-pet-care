@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react"
+import toast from "react-hot-toast";
 
 export const ServDataContext = createContext()
 
@@ -12,7 +13,8 @@ const ServDataProvider = ({ children }) => {
         setServData(data);
       })
       .catch((e) => {
-        console.log(e.message);
+        // console.log(e.message);
+        toast.error('Something went wrong!')
       });
   }, []);
 

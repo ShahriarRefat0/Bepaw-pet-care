@@ -48,7 +48,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/all-service",
-        element:<AllServices></AllServices>
+        element: <AllServices></AllServices>,
+        loader: () => fetch('/public/servicesData.json')
       },
       {
         path: "contactUs",

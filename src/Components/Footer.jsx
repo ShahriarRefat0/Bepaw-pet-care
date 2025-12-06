@@ -11,14 +11,17 @@ import {
 import { Link } from "react-router";
 const Footer = () => {
   return (
-    <div className="bg-[#F5F1EC] shadow-md dark:bg-[#1A1613] dark:text-gray-300 text-gray-700">
+    <div className="bg-[#F5F1EC] shadow-[0_5px_25px_rgba(0,0,0,0.2)] 
+            dark:bg-[#1A1613] dark:shadow-[0_0_25px_rgba(255,255,255,0.25)] 
+            text-gray-700 dark:text-gray-300">
+
       <footer className="  ">
         <div className="footer sm:footer-horizontal  w-11/12 mx-auto md:py-20 py-10 ">
           <aside>
             <Link to="/" className="cursor-pointer  flex gap-2">
               <img className="md:w-18 w-13" src={logo} alt="" />
               <div>
-                <h4 className="text-[17px] font-medium">Bepaw</h4>
+                <h4 className="text-[17px] font-semibold">Bepaw</h4>
                 <p className="text-[12px]">Pet Care & Shop</p>
               </div>
             </Link>

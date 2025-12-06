@@ -70,5 +70,77 @@
     "description": "Capture festive memories with your pets in a cozy winter-themed photoshoot.",
     "image": "https://i.ibb.co.com/zTcsjjMk/samsung-memory-B4yp-Xk-Gj5h-I-unsplash.jpg",
     "category": "Photography"
+  },
+    {
+    "serviceId": 7,
+    "serviceName": "Winter Wellness Vet Checkup",
+    "providerName": "Healthy Paws Veterinary Clinic",
+    "providerEmail": "support@healthypaws.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 10,
+    "description": "A full winter health examination including coat check, hydration test, and joint mobility assessment.",
+    "image": "https://i.ibb.co.com/tbm2Rng/pexels-tima-miroshnichenko-6235249.jpg",
+    "category": "Health Care"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Luxury Grooming & Spa",
+    "providerName": "Purr & Paw Spa Center",
+    "providerEmail": "contact@purrpawspa.com",
+    "price": 45,
+    "rating": 4.7,
+    "slotsAvailable": 8,
+    "description": "Premium grooming session including bath, haircut, nail trim, and relaxing aromatherapy massage.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdy7ytRaDSBAFnFP_oye5tLMVQ_skdGfW97w&s",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Holiday Pet Photoshoot",
+    "providerName": "Pawfect Moments Studio",
+    "providerEmail": "bookings@pawfectmoments.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Capture festive memories with your pets in a cozy winter-themed photoshoot.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffX_shfKwXMNbN9Ofin2cRVLS--NGcIOtJg&s",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Pet Training & Behavior Session",
+    "providerName": "Smart Paws Academy",
+    "providerEmail": "hello@smartpawsacademy.com",
+    "price": 40,
+    "rating": 4.6,
+    "slotsAvailable": 12,
+    "description": "One-on-one behavior correction, obedience training, and positive reinforcement sessions.",
+    "image": "https://assets-au-01.kc-usercontent.com/ab37095e-a9cb-025f-8a0d-c6d89400e446/a589aa37-71b9-4552-b826-68d9884a300d/article-essential-dog-care-hero.jpg?auto=format&lossless=1&auto=format&lossless=1",
+    "category": "Training"
+  },
+  {
+    "serviceId": 11,
+    "serviceName": "Exclusive Holiday Pet Boarding",
+    "providerName": "Happy Tail Lodge",
+    "providerEmail": "care@happytailodge.com",
+    "price": 55,
+    "rating": 4.8,
+    "slotsAvailable": 7,
+    "description": "Safe, cozy, and fun boarding environment with constant supervision and playtime.",
+    "image": "https://thumbs.dreamstime.com/b/vet-examining-dog-cat-puppy-kitten-veterinarian-doctor-animal-clinic-pet-check-up-vaccination-health-care-dogs-cats-157415123.jpg",
+    "category": "Boarding"
+  },
+  {
+    "serviceId": 12,
+    "serviceName": "Pet Nutrition Consultation",
+    "providerName": "NutriPet Experts",
+    "providerEmail": "consult@nutripet.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 15,
+    "description": "Personalized diet planning, allergy assessment, and seasonal nutrition guidance.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4xu3rd0GqI4LQnlSd0eG5z_nvr4377pTYw&s",
+    "category": "Nutrition"
   }
 ]

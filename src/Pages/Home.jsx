@@ -3,10 +3,11 @@ import Services from "./Services";
 import CareTips from "../Components/CareTips";
 import Vats from "../Components/Vats";
 import FAQ from "../Components/FAQ";
-import SpinnerLoading from "./SpinnerLoading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import FeaturedData from "./FeaturedData";
+
 
 const Home = () => {
 useEffect(() => {
@@ -19,7 +20,8 @@ useEffect(() => {
         <Hero></Hero>
       </section>
       <section className="">
-        <Services></Services>
+        {/* <Services></Services> */}
+     <FeaturedData></FeaturedData>
       </section>
       <section>
         <CareTips></CareTips>
